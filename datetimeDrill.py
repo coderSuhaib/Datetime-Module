@@ -27,16 +27,16 @@ officeClose = 21
 
 def open_hours():
     if userInput == 1:
-        if nycTime > officeOpen and nycTime < officeClose:
+        if nycTime >= officeOpen and nycTime < officeClose:
             print ("NEW York City office is open")
         else:
             print ('New York City Office is closed')
     elif userInput == 2:
-        if ldnTime > officeOpen and ldnTime < officeClose:
+        if ldnTime >= officeOpen and ldnTime < officeClose:
             print ("London office is open")
         else:
             print ('London Office is closed')
     else:
         print ('Incorrect selection!')
         
-        
+open_hours()        
